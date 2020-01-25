@@ -17,7 +17,7 @@ $ pip install colorama
 ```
 ## Uses
 ```
-$ python mega-pints.p
+$ python mega-pints.py
 ```
 
 ## Contact

@@ -15,12 +15,6 @@ $ pip install selenium
 ```
 $ pip install colorama
 ```
-
-## Clone
-```
-$ git clone https://github.com/megatruh/mega-pints
-```
-
 ## Uses
 ```
 $ python mega-pints.p

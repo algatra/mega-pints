@@ -27,19 +27,19 @@ opt.add_argument('--incognito')
 opt.add_argument('--headless')
 opt.add_argument('--disable-gpu')
 
-search = str(input('%sSearch For : %s'%(Fore.LIGHTYELLOW,Fore.LIGHTCYAN)))
-n = int(input('%s ↳ How Much Photos : %s'%(Fore.LIGHTYELLOW,Fore.LIGHTCYAN)))
+search = str(input('%sSearch For : %s'%(Fore.LIGHTYELLOW_EX,Fore.LIGHTCYAN_EX)))
+n = int(input('%s ↳ How Much Photos : %s'%(Fore.LIGHTYELLOW_EX,Fore.LIGHTCYAN_EX)))
 mega = 'https://id.pinterest.com/search/pins/?q=%s&rs=typed'%(search)
 loc = 'drivers/chromedriver'
 alf = webdriver.Chrome(loc, options=opt)
 alf.get(mega)
 
 try:
-	os.mkdir('mega-pint')
-	os.mkdir('mega-pint/%s'%(search))
+	os.mkdir('mega-pints')
+	os.mkdir('mega-pints/%s'%(search))
 except:
 	try:
-		os.mkdir('mega-pint/%s'%(search))
+		os.mkdir('mega-pints/%s'%(search))
 	except:
 		print('',end='')
 
@@ -62,13 +62,13 @@ while True:
 		try:
 			imgs = req.get(k,headers=headers).content
 			rename = k.split('/')[-1:][0]
-			with open('mega-pint/%s/%s'%(search,rename),'wb+') as p:
+			with open('mega-pints/%s/%s'%(search,rename),'wb+') as p:
 				p.write(imgs)
 				p.close()
 			if t == 1:
-				print('  %s↳ %s. Download %s%s %sCompleted'%(Fore.LIGHTYELLOW,t,Fore.LIGHTCYAN,rename,Fore.LIGHTYELLOW))
+				print('  %s↳ %s. Download %s%s %sCompleted'%(Fore.LIGHTYELLOW_EX,t,Fore.LIGHTCYAN_EX,rename,Fore.LIGHTYELLOW_EX))
 			else:
-				print('    %s%s. Download %s%s %sCompleted'%(Fore.LIGHTYELLOW,t,Fore.LIGHTCYAN,rename,Fore.LIGHTYELLOW))
+				print('    %s%s. Download %s%s %sCompleted'%(Fore.LIGHTYELLOW_EX,t,Fore.LIGHTCYAN_EX,rename,Fore.LIGHTYELLOW_EX))
 			if t >= n:
 				break
 			op -= 1

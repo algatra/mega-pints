@@ -5,7 +5,7 @@ Pinterest Image Downloader with Python
 $ git clone https://github.com/megatruh/mega-pints
 ```
 ## Requirements
-First, update your chrome to version 78 or above, then download chromedriver *[Here](http://chromedriver.chromium.org/)* and place itu to megat-pints/driver/ (just paste it to there dont rename it)
+First, update your chrome to version 78 or above, then download chromedriver *[Here](http://chromedriver.chromium.org/)* Adjust to your chrome version and your OS. Then place it into megat-pints/drivers/ (just paste to there, dont rename it)
 ```
 $ pip install requests
 ```

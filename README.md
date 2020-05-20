@@ -9,13 +9,7 @@ First, update your chrome to version 78 or above, then download chromedriver *[H
 
 ## Instalation
 ```
-$ pip install requests
-```
-```
-$ pip install selenium
-```
-```
-$ pip install colorama
+$ python setup.py
 ```
 ## Uses
 ```

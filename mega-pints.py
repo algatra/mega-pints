@@ -86,6 +86,6 @@ while True:
 
 
 # '''
-# Script By github.com/megatruh
+# Script By github.com/algatra
 # Credit me for share thanks
 # '''

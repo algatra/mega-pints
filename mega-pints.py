@@ -78,9 +78,9 @@ class Pints:
 
 					if k not in alink:
 						alink.append(k)
-						if 'i.pinimg.com' not in req.get(k).text:
+						if 'AccessDenied' in req.get(k).text:
 							k = k.replace('jpg','png')
-							if 'i.pinimg.com' not in req.get(k).text:
+							if 'AccessDenied' in req.get(k).text:
 								k = k.replace('png','gif')
 								
 						cln.append(k)
